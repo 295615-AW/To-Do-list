@@ -78,18 +78,12 @@ Choose an option: 2
 
 - C++ compiler - for example Visual Studio
 
-### How to build and run
-
-1. Open VS (Visual Studio).
-2. Open the `.slnx` file.
-3. Press `Ctrl` + `F5`.
-
 ### What I learned
 
 - `vector` - creating vectors, `.push_back()`, `.empty()`, iterating over vectors using indexes
 - `struct` - creating a new `struct` and using it in a `vector`
 - `ignore` - to discard the leftover newline (`\n`) in the input buffer
-- `getline()` - readnig the whole line of text, including spaces
+- `getline()` - reading the whole line of text, including spaces
 
 ### Possible improvements / Known issues
 
