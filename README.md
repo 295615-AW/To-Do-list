@@ -1,50 +1,101 @@
-# To-Do-list
-## Nagłówek sekcji
-**pogrubienie**, *kursywa*, `kod w linii`
+# To-Do List
 
-- punkt listy
-- drugi punkt
+*This is a console program written in C++ that lets you create and manage a To-Do list.*
+   
 
-1. punkt numerowany
+### Features
+ 
+- **Add a task** - allows the user to add a new task to the list
+- **Show tasks** - prints all tasks on the screen
+- **Mark a task as completed** - marks the chosen task as completed
+- **Delete a task** - deletes the chosen task from the list
+- **Exit** - ends the program
 
-````​cpp
-// blok kodu (po trzech apostrofach wpisz język)
-```​
+### Example / Demo
+
+```
+1 - Add a task
+2 - Show tasks
+3 - Mark a task as completed
+4 - Delete a task
+0 - Exit
+Choose an option: 1
+
+Enter a new task: clean the kitchen
+Task added
+
+1 - Add a task
+2 - Show tasks
+3 - Mark a task as completed
+4 - Delete a task
+0 - Exit
+Choose an option: 1
+
+Enter a new task: go shopping
+Task added
+
+1 - Add a task
+2 - Show tasks
+3 - Mark a task as completed
+4 - Delete a task
+0 - Exit
+Choose an option: 3
+
+Enter the task number to mark as completed: 1
+Task marked as completed
+
+1 - Add a task
+2 - Show tasks
+3 - Mark a task as completed
+4 - Delete a task
+0 - Exit
+Choose an option: 2
+
+[x] 1. clean the kitchen
+[ ] 2. go shopping
+
+1 - Add a task
+2 - Show tasks
+3 - Mark a task as completed
+4 - Delete a task
+0 - Exit
+Choose an option: 4
+
+Enter the task number to delete: 2
+Task deleted
+
+1 - Add a task
+2 - Show tasks
+3 - Mark a task as completed
+4 - Delete a task
+0 - Exit
+Choose an option: 2
+
+[x] 1. clean the kitchen
 ```
 
-Blok kodu zaczynasz i kończysz trzema odwrotnymi apostrofami (```). Dla wyniku działania programu użyj bloku bez języka albo z `text`.
+### Requirements
 
-## Proponowana struktura
+- C++ compiler - for example Visual Studio
 
-1. **Tytuł + jedno zdanie opisu** (co to jest?)
-   *Pytanie pomocnicze: gdybyś miała opisać projekt w jednym zdaniu osobie, która nie zna programowania, co byś powiedziała?*
+### How to build and run
 
-2. **Features** (lista funkcji)
-   *Wypisz, co program potrafi. Masz 4 opcje w menu, a każda to jedna pozycja.*
+1. Open VS (Visual Studio).
+2. Open the `.slnx` file.
+3. Press `Ctrl` + `F5`.
 
-3. **Example / Demo**
-   *Uruchom program, wykonaj kilka kroków i wklej prawdziwy wynik z konsoli w bloku kodu. To najlepiej pokazuje, jak program działa.*
+### What I learned
 
-4. **Requirements**
-   *Czego potrzeba do uruchomienia? Kompilator C++ (jaki standard?) albo Visual Studio.*
+- `vector` - creating vectors, `.push_back()`, `.empty()`, iterating over vectors using indexes
+- `struct` - creating a new `struct` and using it in a `vector`
+- `ignore` - to discard the leftover newline (`\n`) in the input buffer
+- `getline()` - readnig the whole line of text, including spaces
 
-5. **How to build and run**
-   *Dwa sposoby: Visual Studio (otwórz `.slnx`, naciśnij Ctrl+F5) oraz `g++`. Sprawdź, czy komenda z `g++` u Ciebie naprawdę działa, zanim ją wpiszesz.*
+### Possible improvements / Known issues
 
-6. **What I learned** (opcjonalnie)
-   *Co ćwiczył ten projekt: `std::vector`, `struct`, funkcje, obsługa wejścia. To pokazuje, że projekt jest do nauki.*
+- saving to a file
+- input validation
 
-7. **Possible improvements / Known issues**
-   *Np. zapis do pliku, walidacja wejścia (wpisanie litery zapętla program). Uczciwa lista wad wygląda profesjonalnie.*
+### License
 
-8. **License** (jeśli dodasz)
-
-## Wskazówki do angielskiego
-
-- Używaj **krótkich zdań** i czasu teraźniejszego: "This program lets you manage tasks in the console."
-- Wypisując funkcje, zaczynaj od czasownika: "Add tasks", "Mark tasks as completed".
-- Możesz użyć "A simple console to-do list written in C++" jako wzoru stylu, ale sformułuj własne zdanie.
-
-## Sprawdzanie
-
-Przy zatwierdzaniu na GitHubie zakładka **Preview** pokazuje, jak README będzie wyglądać. Gdy skończysz, wklej tekst tutaj, a poprawię angielski (gramatykę i naturalność), nie zmieniając treści. 😊
+This project is licensed under the MIT License.
